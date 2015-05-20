@@ -1,0 +1,32 @@
+/*This program will let the user guess whether the flip
+of a coin will result in heads or tails.
+It will alos prompt the user to enter a guess and reports whether the guess is correct or not.
+Nicholas Perez
+*/
+
+import java.util.Scanner;
+
+public class HeadorTails {
+	public static void main(String [] args) {
+
+		//creating variables and scanner object
+		int guess = (int)(Math.random() * 2);			//generates random number from 0-1
+		Scanner input = new Scanner(System.in);
+
+		//prompting reader and reading values
+		System.out.print("Enter your guess (0) for heads or (1) for tails: ");
+		int user_guess = input.nextInt();
+
+
+		if (user_guess == guess) {
+			if (user_guess == 0)
+				System.out.println("You've guessed Heads!");
+
+			else
+				System.out.println("You've guessed Tails!");
+		}
+
+		else 
+			System.out.println("You have guessed wrong!");
+	}
+}
