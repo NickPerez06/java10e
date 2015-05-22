@@ -9,7 +9,6 @@ public class Exercise4_9 {
 	public static void main(String [] args) {
 		
 		//creaitng varaibles for int and char
-		int numChange;
 		char charConsume;
 
 		//Creating Scanner object and prompting user
